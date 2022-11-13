@@ -4,8 +4,9 @@
 #version 0.1
 #Patryk Basko
 
+#replace XXXX by your weebhook
 
 from discordwebhook import Discord
 
-discord = Discord(url="https://discord.com/api/webhooks/1041453417106771988/VFfPUIzixszP5nT9LDTQnnAIvlxfCBCA32i-BRqcp6iBzR7hXV9cp0P-x9e0vVzV_CNS")
+discord = Discord(url="XXXXXXX")
 discord.post(content="Ukończono pobieranie torrenta!!!")
