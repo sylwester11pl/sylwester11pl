@@ -1,0 +1,6 @@
+#Custom values for custom scripts
+#use this to manipulate variable and parameters
+
+#enabled or disabled
+enabled_tcpConn=enabled
+tcp_limit=13

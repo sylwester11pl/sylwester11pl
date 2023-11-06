@@ -1,0 +1,246 @@
+śro, 19 kwi 2023, 20:22:34 CEST
+Już aktualne.
+=========++++++++++==========
+śro, 19 kwi 2023, 20:24:37 CEST
+Już aktualne.
+=========++++++++++==========
+śro, 19 kwi 2023, 20:25:06 CEST
+Już aktualne.
+=========++++++++++==========
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Aktualizowanie ccd8d9a..c4cee0a
+Fast-forward
+ scripts/bash/get-data.sh | 37 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 37 insertions(+)
+ create mode 100644 scripts/bash/get-data.sh
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Aktualizowanie c4cee0a..ff88e1b
+Fast-forward
+ scripts/bash/check.tool.health-status.sh | 99 ++++++++++++++++++++++++++++++++
+ scripts/bash/get-data-crontab.sh         | 33 +++++++++++
+ scripts/bash/get-data-csv.sh             | 68 ++++++++++++++++++++++
+ 3 files changed, 200 insertions(+)
+ create mode 100644 scripts/bash/check.tool.health-status.sh
+ create mode 100644 scripts/bash/get-data-crontab.sh
+ create mode 100644 scripts/bash/get-data-csv.sh
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Aktualizowanie ff88e1b..c4efd73
+Fast-forward
+ ansible/.empty | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ansible/.empty
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Aktualizowanie c4efd73..a2fca4f
+Fast-forward
+ scripts/bash/check_storage.sh                      | 52 ++++++++++++++++++++++
+ scripts/py/.idea/.gitignore                        |  3 ++
+ .../.idea/inspectionProfiles/profiles_settings.xml |  6 +++
+ scripts/py/.idea/misc.xml                          |  4 ++
+ scripts/py/.idea/modules.xml                       |  8 ++++
+ scripts/py/.idea/py.iml                            |  8 ++++
+ scripts/py/.idea/vcs.xml                           |  6 +++
+ scripts/py/DateTimeTest.log                        | 12 +++++
+ scripts/py/dupa11.test                             |  0
+ 9 files changed, 99 insertions(+)
+ create mode 100644 scripts/bash/check_storage.sh
+ create mode 100644 scripts/py/.idea/.gitignore
+ create mode 100644 scripts/py/.idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 scripts/py/.idea/misc.xml
+ create mode 100644 scripts/py/.idea/modules.xml
+ create mode 100644 scripts/py/.idea/py.iml
+ create mode 100644 scripts/py/.idea/vcs.xml
+ create mode 100644 scripts/py/DateTimeTest.log
+ create mode 100644 scripts/py/dupa11.test
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
+Już aktualne.
