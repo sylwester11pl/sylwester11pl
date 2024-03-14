@@ -1,0 +1,92 @@
+version: "2.0"
+
+# network for mongo nodes
+networks:
+  mongoControler:
+    driver: bridge
+
+# definition all needed volumes
+volumes:
+  mongo1:
+  mongo2:
+  mongo3:
+  prom_data:
+
+# create mongo's nodes
+
+services:
+  mongoNode1:
+    image: mongo:4.2.8-bionic
+    container_name: mongoNode1
+    restart: on-failure
+    volumes:
+      - mongo1:/mnt
+      - /opt/init-script/mongo-clust-init.sh
+    networks:
+      - mongoControler
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=lab123
+      - MONGO_INITDB_DATABASE=sample
+    command:  --replSet DummyCluster --bind_ip localhost,mongoNode1
+    links: 
+      - mongoNode2
+      - mongoNode3
+  mongoNode2:
+    image: mongo:4.2.8-bionic
+    container_name: mongoNode2
+    restart: on-failure
+    volumes:
+      - mongo2:/mnt
+    networks:
+      - mongoControler
+    ports:
+      - 27018:27017
+    command:  --replSet DummyCluster --bind_ip localhost,mongoNode2
+  mongoNode3:
+    image: mongo:4.2.8-bionic
+    container_name: mongoNode3
+    restart: on-failure
+    volumes:
+      - mongo3:/mnt
+    networks:
+      - mongoControler
+    ports:
+      - 27019:27017
+    command:  --replSet DummyCluster --bind_ip localhost,mongoNode3
+
+# create prometheus and grafana
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - 9090:9090
+    restart: unless-stopped
+    volumes:
+      - ./prometheus:/etc/prometheus
+      - prom_data:/prometheus
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=QWEASDZXC123!@#
+    volumes:
+      - ./grafana:/etc/grafana/provisioning/datasources
+
+# create mongodb exporter
+  mongo-prometheus:
+    container_name: mongo-exporter
+    image: bitnami/mongodb-exporter:0.11.0-debian-10-r75
+    ports:
+      - 8880:9216
+    environment:
+      - MONGODB_URI=mongodb://admin:lab123@mongo:27017
